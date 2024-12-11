@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretería clavos y mas clavos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        header img {
+            width: 150px; 
+            height: auto;
+            margin-bottom: 50px; 
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        /* Estilo para los botones desplegables */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;  /* Inicialmente oculto */
+            position: absolute;
+            background-color: #444;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;  /* Muestra el submenú al pasar el mouse */
+        }
+
+        .container {
+            padding: 20px;
+        }
+        .product {
+            background-color: white;
+            margin: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+        }
+        .product img {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .product-details {
+            flex-grow: 1;
+        }
+        .price {
+            font-size: 1.2rem;
+            color: #d9534f;
+        }
+        .promotion {
+            color: #5bc0de;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Agregar el logotipo con la etiqueta <img> -->
+        <img src="/data/desarrolloweb/logo2.jpg" alt="Logo Ferretería clavos y más clavos">
+        <h1>clavos y más clavos Ferretería</h1>
+        <p>Las mejores herramientas a los mejores precios</p>
+    </header>
+
+    <nav>
+        <div class="dropdown">
+            <a href="#">Nosotros</a>
+            <div class="dropdown-content">
+                <a href="#">Misión</a>
+                <a href="#">Visión</a>
+                <a href="#">Historia</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Contáctanos</a>
+            <div class="dropdown-content">
+                <a href="#">Formulario</a>
+                <a href="#">Ubicación</a>
+                <a href="#">Teléfono</a>
+            </div>
+        </div>
+        <a href="#promociones">Promociones</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="martillos">
+            <h2>Martillos</h2>
+            <div class="product">
+                <img src="martillo.jpg" alt="Martillo de acero">
+                <div class="product-details">
+                    <h3>Martillo de Acero</h3>
+                    <p>Martillo de acero con mango de madera, ideal para trabajos de construcción y reparaciones domésticas.</p>
+                    <p class="price">$8.99</p>
+                    <p class="promotion">¡Promoción! Compra 2 y lleva 1 a mitad de precio.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="taladros">
+            <h2>Taladros</h2>
+            <div class="product">
+                <img src="taladro.jpg" alt="Taladro eléctrico">
+                <div class="product-details">
+                    <h3>Taladro Eléctrico</h3>
+                    <p>Taladro eléctrico de alta potencia, ideal para perforar madera, metal y plástico.</p>
+                    <p class="price">$29.99</p>
+                    <p class="promotion">¡Compra en paquete! 1 taladro y 5 brocas por solo $39.99.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="promociones">
+            <h2>Promociones Especiales</h2>
+            <ul>
+                <li>Compra 1 martillo y llévate una caja de clavos de regalo.</li>
+                <li>Descuento del 10% en herramientas al pagar con tarjeta de crédito.</li>
+                <li>Paquete de taladro + brocas a un precio especial por tiempo limitado.</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2024 clavos y mas clavos Ferretería | Daniela Viviana Gomez de la Cruz</p>
+    </footer>
+
+</body>
+</html>
